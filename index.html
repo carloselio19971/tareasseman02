@@ -3,9 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tarea</title>
+    <link rel="stylesheet" href="style.css"></link>
 </head>
 <body>
+    <h1 style="color:red;">Tarea Selectores</h1>
+    <ol>
+        <li><a href="#ejercicio1">cuantas maneras existe para vincular html y css</a> </li>
+        <li><a href="#ejercicio2">Explicar con sus palabras el conjunto de reglas de css (selector , propiedad , valor)</a></li>
+        <li><a href="#ejercicio3">Explicar los 4 conceptos importantes con ejemplos ¿Que es? ¿Ejemplo?(selectores, herencia, cascada, especificidad)</a></li>
+    </ol>
+
+    <h2 id="ejercicio1">Ejercicios 01</h2>
+    <p>Existen <b>3 </b>formas de vincular el hmtl y el css</p>
     
+    <ol>
+        <li>Etiqueta <b>Style</b>, dentro del cuerpo de html  <a href="#estilo"> ver ejemplo</a></li>
+        <li>De manera <b>Inline</b> como atributo de un elemento<a href="#en-linea">ver ejemplo</a></li>
+        <li> De manera externa mendiante una <b>extensión con elemento css.</b></extensi><a href="#externo">ver ejemplo</a></li>
+    </ol>
+
+
+    <h3 id="estilo" class="#ejercicio1">1 Etiqueta Style</h3>
+    <figure>
+        <img src="img/style.png" alt="dentro del cuerpo html"/>
+        <figcaption>
+           <p>Utilizando la etiqueta <b>Style</b>, dentro del cuerpo de html</p>
+            </figcaption>
+    </figure>
+
+    <h3 id="en-linea"> 2 Inline</h3>
+    <figure>
+        <img src="img/inline.png" alt="inline html"/>
+        <figcaption>
+        <p>De manera Inline como atributo de un elemento</p>
+        </figcaption>
+    </figure>
+
+    <h3 id="externo" id="ejercicio2">3 Archivo Externo</h3>
+    <figure>
+        <img src="img/archivoexterno.png" alt="archivo externo html"/>
+        <figcaption>
+        <p>De manera externa mendiante una extensión con elemento css.</p>
+        </figcaption>
+    </figure>
+
+    <h2 id="ejercicio2">Ejercicios 02 </h2>
+
+    <p>Dentro de las reglas de css existen  3 elementos importantes <b>Selector, Propiedad y el Valor</b></p>
+    <h4>Selector</h4>
+    <p>Nos permite identificar que elemento deseo seleccionar</p>
+    <h3>Propiedad</h3>
+    <p>Nos permite indicar que tipo de accion vamos a realidad ejemplo quiero cambiar el color del elemento, cambiar el tipo de letra</p>
+    <h3>Valor</h3>
+    <p>Nos permite indicar el valor que se le va asignar a la propiedad</p>
+  
+    <figure>
+        <img src="img/reglas.png"/>
+        <figcaption>
+            <p>
+                <b>H1</b> es selector, <b>color</b> es la propiedad y <b>red</b> es el valor 
+            </p>
+        </figcaption>
+    </figure>
+    <h2 id="ejercicio3">Ejercicios 03</h2>
+
+    <h4>Selector</h4>
+    <p> Un selector nos permite identificar que elementos dentro de todo el documento html se le aplicará un estilo en especifico</p>
+    <figure>
+        <img src="img/selector.png">
+        <figcaption>
+            <p>
+                <b>El selector selecciona los elementos h1 dentro de todo el html</b>
+            </p>
+        </figcaption>
+    </figure>
+
+    <h4>Herencia</h4>
+    <p>Nos indica que los elemenos ancestros herendas las propiedades de sus descendientes</p>
+    <figure>
+        <img src="img/cascado2.png">
+        <img src="img/ejemplocascada.png"
+        <figcaption>
+            <p>
+                <b>Todos los elementos de body adquieren el color rojo</b>
+            </p>
+        </figcaption>
+    </figure>
+    <h4>Cascada</h4>
+    <p>Hace referencia que los estilo que se realizan en ultima lugar sobreescriben a los estilo que ya estan prefedinidos
+    </p>
+    <figure>
+        <img src="img/cascadah1.png">
+        <img src="img/titulocascada.png">
+        <figcaption>
+            <p>
+                <b>Se define el color oranga el final por lo que se aplica este estilo al h1</b>
+            </p>
+        </figcaption>
+    </figure>
+
+    <h4>Especificad</h4>
+    <p>Es una valor que adquiere un selector para determinar una reglas de jerquia tiene valores numericos a mas valor mas jerquia tiene el selector</p>
+
+    <h5>NIVEL DE SELECTORES PRO ESPECIFICIDAD</h5>
+
+    <ol>
+        <li>Etiqueta valor 1</li>
+        <li>Clase valor 10</li>
+        <li>Id valor 100</li>
+        <li>Stile valor 1000</li>
+        <li>Important valor infinito</li>
+    </ol>
+
+    <figure>
+        <img src="img/especificdad.png">
+        <img src="img/especificiadimagen.png">
+        <figcaption>
+            <p>
+                <b>En el ejemplo se obserba que el parrafo esta despues de la etiqueta pero la especificadad de parrafo tiene un valor de 10 y de la etique 1 por lo que se prioza el color rojo</b>
+            </p>
+        </figcaption>
+    </figure>
+
+
 </body>
 </html>
